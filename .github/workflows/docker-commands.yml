@@ -29,7 +29,7 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build \
-            -t ${{ secrets.DOCKERHUB_USERNAME }}/bse_16_commands:latest .
+            -t ${{ secrets.DOCKERHUB_USERNAME }}/bse_16_command:latest .
 
       - name: Push Docker Image
         run: |
